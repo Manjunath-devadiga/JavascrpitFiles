@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+</head>
+<body>
+  
+</body>
+<script>
+
+
+//  var a  = 12;
+//  var a = 25;
+//  console.log(a)
+
+
+// let a = "manjunath"
+// let a = "Shekar"
+// console.log(a)
+
+// const a = "Shekar";
+// a = "Manjunath";
+// console.log(a)
+
+   
+
+let a = "manjunath";
+let b = a.split("").reverse().join("")
+console.log(b)
+
+
+
+   //default Parameter
+       //calling the function with default parameter
+    // function greeting(a="Hello") {
+    //   console.log(a);
+    // }
+
+    // greeting("My name is Manjunath");
+
+
+   let c;
+   console.log(c)
+
+    function Greeting(a="Gud morning"){
+        console.log(a)
+    }
+
+    Greeting("Gud Evenenig")
+
+
+
+
+
+
+
+
+
+
+// function greeting(a= "Hello"){
+//   console.log(a)
+// }
+// greeting("Gud morning")
+
+
+
+
+
+
+    // Rest parameter Opreater 
+
+//     function add(...a){
+       
+//       let sum = 0;
+//       for(i = 0;i<a.length;i++){
+//            sum += a[i]
+//       }
+//       console.log(sum)
+//      console.log(a)
+
+//     }
+
+ 
+// add(4, 5,5,65, 88 , 55, 100,50, 100)
+
+
+// function add(...a){
+//   let sum = 0;
+//   for(i = 0 ; i<a.length; i++){
+//       sum += a[i]
+//   }
+  
+// }
+// add(5,9,4)
+
+
+//spread Opreater 
+
+// let arry1 = [1,5,6,8,10];
+// let arry2 = [22,55,22,33, ...arry1]
+// console.log(arry2)
+
+// For of
+
+
+// let array1 = ["manjunath","Shekar","Ravan", "Rahul","Suhani"]
+
+
+// for(let i= 0; i<array1.length; i++){
+
+//  console.log(i)
+// }
+
+// for(let x of array1){
+//    console.log(x)
+// }
+// let string1 = "My name is manjunath"
+// for(let i of string1){
+//    console.log(i)
+// }
+// let obj = {
+//     name:"manjunath",
+//     age:12,
+//     gender:"Male"
+// }
+
+// for(let x of Object.keys(obj)){
+//   console.log(x)
+// }
+
+
+  // let array1 = ["manjunath", "Shekar", "Ravan", "Rahul", "Suhani"]
+
+  // for(let x in array1){
+  //  console.log( x,  array1[x])
+  // }
+
+
+
+  // let obj = {
+  //       name:"manjunath",
+  //       age:12,
+  //       gender:"Male"
+  //   }
+
+  //   for(let x in obj){
+  //      console.log(x, obj[x])
+  //   }
+
+  // template litrial
+
+  // let a = `manjunath`
+  // console.log(`My name is ${a} hello world`)
+  // console.log("My name is" + a + "Hello world")
+
+
+// Array Destructing 
+
+// function Book(){
+//     return ["Manjunath", "Devadiga"]
+// } 
+
+// let name = Book()
+
+// console.log(name)
+
+// let array = [2,5,6,8,55,4]
+
+// for(let a of array){
+
+//   console.log(a)
+
+// }
+
+// let obj = {
+//   name:"Manjunath",
+//   Age:12
+// }
+
+
+// for(let a of Object.values(obj)){
+//      console.log(a)
+// }
+
+// let arrays = [1,2,3,4,5]
+
+// for(let a in arrays){
+// console.log(a + arrays[a])
+// }
+
+
+// let obj = {
+//    name:"manjunath",
+//    age:12,
+//    Gender:"Male"
+// }
+// for(let a in obj){
+//    console.log(a , "" ,obj[a]) 
+// }
+
+
+// let sum = [12,45,78,0]
+// sum.length = 0
+// console.log(sum)
+
+
+
+// Es6
+
+// default parameter
+
+// function greeting(a = "Gud morning" ,b = 'gud Evening'){
+//    console.log(a)
+// }
+// greeting("gud night",)
+
+// function sum(...a){
+//    console.log(a)
+//    let sum = 0
+//    for(i= 0; i<a.length; i++){
+//   sum += a[i]
+//    }
+
+//    console.log(sum)
+// }
+// sum(10,10,25,45,88)
+
+
+// let sum = [45,88.99,77]
+// let sum2 =[88,22,99,44,...sum]
+// console.log(sum2)
+
+// arry and object destructing
+
+// let Books = ["HTML" ,200, 150,"Skekar","pune",["Manjunath", 23]];
+// let Bookname = Books[0]
+// let Bookprices = Books[1]
+// let Bookpages = Books[2]
+// let Bookauthor = Books[3]
+
+// console.log(Bookname)
+
+// let [Bookname,Bookprices , Bookpages, Bookauthor, Bookcity,[Name , age]] = Books
+// console.log(Name)
+
+// let obj = {
+//     Name:"Manjunath",
+//     age:24,
+//     Gender:"Male",
+//     Poistion:'Font-end-developer'
+// }
+
+// let {Name:re,age,Gender:Gen,Poistion} = obj
+
+// console.log(Gen)
+
+
+// for of
+
+// let Names = ["Manjunath","Shekar","Ram","Rahul"]
+// for(let a of Names){
+//  console.log(a)
+// }
+
+// let name = "Manjunath"
+// for(let a  of name){
+//    console.log(a)
+// }
+
+  // let Names = ["Manjunath","Shekar","Ram","Rahul"]
+  // for(let a in Names){
+  //     console.log(a, ""+ Names[a])
+  // }
+
+  // let obj = {
+  //     Name:"Manjunath",
+  //       age:24,
+  //       Gender:"Male",
+  //       Poistion:'Font-end-developer'
+  // }
+
+  // for(let a in obj){
+  //    console.log(a , ":" + obj[a])
+  // }
+
+
+
+
+
+</script>
+</html>

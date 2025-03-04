@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // let a = 3;
+    // let b = 8;
+    // a = a+b;
+    // b = a-b;
+    // a = a-b;
+    // console.log("a = ",a,"b = ",b)
+
+    // let arr = [6,2,3,8,5,2]
+    // let arr2= []
+    // for(i=0;i<arr.length;i++){
+    //       arr2[i] = arr[i] * 2
+    // }
+    // console.log(arr2)
+
+    // MAPPED FUNCTION()----------works with all elements ,we can;t implement any condition
+    // let arr2 = arr.map((val)=>{
+    //     return val*val
+    // })
+    // console.log(arr2)
+
+    // Filter funnction() -----------we can give condition and work with the required elements
+    // let  arr = [2,8,6,29,36,82,17,3,7]
+    // let arr2 = arr.filter(function (val){
+    //     return val<=10
+    // })
+    // console.log(arr2)
+    
+    Employee = [{name : "Suhani",Age : 19,Gender: "Female",Position : "FullStack Developer"},
+        { name: "Pratiksha", Age: 22, Gender: "Female", Position: "Back-end Developer" },
+        { name: "Rahul", Age: 25, Gender: "Male", Position: "Front-end Developer" },
+        { name: "Pillya", Age: 18, Gender: "Male", Position: "FullStack Developer" },
+        { name: "Sonal", Age: 20, Gender: "Female", Position: "Java Developer" },
+        { name: "Krish", Age: 30, Gender: "Male", Position: "Python Developer" }
+    ]
+
+    let arr2 = Employee.filter((val)=>{
+        return val.Position === "FullStack Developer"
+    })
+    console.log(arr2)
+
+</script>
+</html>

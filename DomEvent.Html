@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        height: 1000px;
+    }
+</style>
+<body>
+<!-- These events occur when the user interacts with the mouse.
+
+Event Description
+ONclick Fired when an element is clicked.
+mouseover Fired when the mouse enters an element.
+mouseout Fired when the mouse leaves an element.
+contextmenu Fired when the right mouse button is clicked
+dblclick Fired when an element is double-clicked.
+mousedown Fired when a mouse button is pressed.
+mouseup Fired when a mouse button is released.
+
+KeyBoard Events 
+
+
+
+<!-- These events occur when the user interacts with the keyboard.
+
+Event Description
+keydown Fired when a key is pressed.
+keyup Fired when a key is released.
+
+ 
+<!-- <button id="BTN" onmouseup="Click()">
+     Click ME
+</button> -->
+
+
+<script>
+  
+// function Click(){
+//     alert("You clicked the button");
+// }
+
+
+window.addEventListener("keyup", function(event){
+    console.log(event.key)
+})
+
+// let btn = document.getElementById("BTN")
+//     btn.addEventListener("click", function(){
+//          alert("You clicked the button");
+//     })
+
+    // btn.addEventListener("mouseover",function(){
+    //      alert("It has been Hover")
+    // })
+
+    // btn.addEventListener("mouseout", mouseout)
+
+    // function mouseout(){
+    //     alert("You Mouse Is Out")
+    // }
+
+
+</script>
+</body>
+</html>

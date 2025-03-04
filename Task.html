@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Text & Style</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-top: 50px;
+        }
+
+        p {
+            padding: 10px;
+            font-size: 18px;
+            background-color: lightgray;
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Click the Button to Change Text & Style</h2>
+    <p id="text">This is a paragraph.</p><br>
+    <button onclick="changeTextStyle()">Change Text & Style</button>
+
+    <script>
+        function changeTextStyle() {
+            let paragraph = document.getElementById("text");
+            paragraph.textContent = "Text Changed!";
+            paragraph.style.backgroundColor = "lightcoral";
+            paragraph.style.color = "white";
+            paragraph.style.fontWeight = "bold";
+        }
+    </script>
+
+</body>
+
+</html>

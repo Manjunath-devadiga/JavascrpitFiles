@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     .form-design{
+           margin:50px;
+           padding: 25px;
+     }
+
+     .form-design input {
+           padding: 10px;
+           width: 50%;
+           border-radius: 10px;
+           border: 2px solid yellow;
+           background-color: aqua;
+
+     }
+     #sub{
+          border: 3px solid black;
+          width: 20%;
+          background-color: wheat;
+          
+     }
+     #name-error{
+          font-weight:bold;
+    font-size: large;
+    color: red;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 30px;
+     }
+     #email-error{
+                 font-weight:bold;
+    font-size: large;
+    color: red;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 30px;
+     }
+     #num-error{
+         font-weight:bold;
+    font-size: large;
+    color: red;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 30px;
+     }
+     #pass-error{
+          font-weight:bold;
+    font-size: large;
+    color: red;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 30px;
+     }
+     #cpass-error{
+          font-weight:bold;
+    font-size: large;
+    color: red;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 30px;
+     }
+</style>
+<script>
+    let handlesubmit =()=>{
+        //Name validation    
+        let name = document.getElementById("name").value   //
+        if(name == ""){
+        document.getElementById("name-error").innerHTML = "Please Field This input box"
+        return false;
+
+        }else if(name.length <=3 || name.length >=20){
+           document.getElementById("name-error").innerHTML = "*Name should be greater than 3 Words or less than 20 Words 🔴"
+            document.getElementById("name-error").style.color = "red"
+           return false;
+        }else{
+                document.getElementById("name-error").innerHTML = "Vaild data"
+               document.getElementById("name-error").style.color="blue"
+              
+            
+        }
+        // Email validation
+        let email = document.getElementById("email").value
+        let emailregex = "^[a-z0-9._%+-]+@([a-z0-9.-])+\.[a-z]{2,4}$"
+
+        if(email == ""){
+          document.getElementById("email-error").innerHTML= "Please Enter Your Mail"
+          return false
+        }else if(!email.match(emailregex)){
+          document.getElementById("email-error").innerHTML = "Invalid Email"
+          return false
+        }
+
+        //phone Number
+
+        let number = document.getElementById("number").value
+        let nuberegex = "^[0-9 ]{10}$";
+
+        if(number == ""){
+               document.getElementById("num-error").innerHTML = "Please Enter Ph Number"
+               return false
+        }else if(!number.match(nuberegex)){
+    document.getElementById("num-error").innerHTML = "Please Enter Valid Number"
+    return false
+        } 
+        
+        //Password
+        let password = document.getElementById("pass").value
+        let passwordregex = "^(?=.*[0-9])(?=.*[!@#$%^&*])[zA-a-Z0-9!@#$%^&*]{6,16}$"
+
+        if(password == ""){
+             document.getElementById("pass-error").innerHTML = "Please Enter Password"
+             return false
+        }else if(!password.match(passwordregex)){
+           document.getElementById("pass-error").innerHTML = "Please Enter Valid password For Exampe:Prasad@123"
+           return false
+        }
+
+        //confrim Password
+
+   let confrimpassword = document.getElementById("cpass").value
+
+   if(password !==confrimpassword){
+     document.getElementById("cpass-error").innerHTML = "Please Match The Password"
+     return false
+   }else{
+      document.getElementById("cpass-error").innerHTML = ""
+   }
+
+
+         
+
+    }
+</script>
+<body>
+    
+   
+     <form class="form-design"  onsubmit=" return handlesubmit()" >
+        <center><h1>Login Form </h1></center>
+         <label>Name:</label>
+
+         <input type="text" placeholder="Enter Your name" id="name" name="fname">
+         <span id="name-error" >😊</span>
+      <br/>
+      <br/>
+        <label>Email:</label>
+        
+        <input type="text" placeholder="Enter Your Email" id="email" name="email">
+        <span id="email-error"></span>
+        <br />
+        <br />
+        <label>Number:</label>
+        
+        <input type="number" placeholder="Enter Your Number" id="number" name="number">
+        <span id="num-error"></span>
+        <br />
+        <br />
+        <label>Password:</label>
+        
+        <input type="text" placeholder="Enter Your Password" id="pass" name="password">
+        <span id="pass-error"></span>
+        <br />
+        <br />
+        <label>Confrim Password:</label>
+        
+        <input type="text" placeholder="Enter Your Confrim Password" id="cpass" name="cpass">
+        <span id="cpass-error"></span>
+        <br />
+        <br />
+
+        <center><input type="submit" id="sub" value="Submit Data">  </center>
+         
+
+     </form>
+  
+
+</body>
+</html>
